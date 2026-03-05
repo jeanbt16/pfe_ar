@@ -46,6 +46,9 @@
       xrextras-runtime-error
       xrweb="disableWorldTracking: true">
 
+      <a-assets>
+        <a-asset-item id="model" src="./assets/lavillear.glb"></a-asset-item>
+      </a-assets>
       <!-- The virtual camera that matches your phone camera -->
       <a-camera position="0 4 10"></a-camera>
 
@@ -55,9 +58,12 @@
         
         <!-- EVERYTHING INSIDE HERE SHOWS UP ON TOP OF THE REAL WORLD POSTER -->
         
-        <!-- A floating Pink Box -->
-        <!-- Position is X (left/right), Y (up/down/out of poster), Z (forward/back) -->
-        <a-box color="#FF0055" position="0 0.5 0" scale="1 1 1"></a-box>
+        <!-- A floating cathedrale -->
+        
+
+        
+          <a-entity scale=".2 .2 .2" position="0 0 0" rotation="90 0 0" gltf-model="#model"></a-entity>
+        
         
         <!-- Floating Text -->
         <a-text value="Graphic Design is AR!" color="white" align="center" position="0 1.5 0"></a-text>
