@@ -21,7 +21,7 @@
           imageTargetData:[{
             "name": "my-poster",         // A nickname for your image
             "type": "PLANAR",            // It is a flat image (not a cylinder/cone)
-            "imagePath": "./assets/1000055040bw-resize-640x480.jpg", 
+            "imagePath": "./assets/imagesource.png", 
             "properties": {
               "left": 0, "top": 0, 
               "width": 480, "height": 640,          // The dimensions we saved it as
@@ -47,7 +47,7 @@
       xrweb="disableWorldTracking: true">
 
       <a-assets>
-        <a-asset-item id="model" src="./assets/lavillear.glb"></a-asset-item>
+        <a-asset-item id="model" src="./assets/ville3D.glb"></a-asset-item>
       </a-assets>
       <!-- The virtual camera that matches your phone camera -->
       <a-camera position="0 4 10"></a-camera>
@@ -62,7 +62,7 @@
         
 
         
-          <a-entity scale=".2 .2 .2" position="0 0 0" rotation="90 0 0" gltf-model="#model"></a-entity>
+          <a-entity scale="1 1 1" position="0 0 0" rotation="90 0 0" gltf-model="#model"></a-entity>
         
         
         <!-- Floating Text -->
