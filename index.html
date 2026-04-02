@@ -21,11 +21,11 @@
           imageTargetData:[{
             "name": "my-poster",         // A nickname for your image
             "type": "PLANAR",            // It is a flat image (not a cylinder/cone)
-            "imagePath": "./assets/fond1.png", 
+            "imagePath": "./assets/fond1bis.png", 
             "properties": {
               "left": 0, "top": 0, 
-              "width": 1185, "height": 1017,          // The dimensions we saved it as
-              "originalWidth": 1185, "originalHeight": 1017,
+              "width": 1338, "height": 1124,          // The dimensions we saved it as
+              "originalWidth": 1338, "originalHeight": 1124,
               "isRotated": false
             }
           }]
@@ -46,8 +46,11 @@
       xrextras-runtime-error
       xrweb="disableWorldTracking: true">
 
+      <a-light type="ambient" color="#FFFFFF" intensity="2.5"></a-light>
+      <a-light type="directional" position="-1 5 0" intensity=""></a-light>
+
       <a-assets>
-        <a-asset-item id="model" src="./assets/ville3D.glb"></a-asset-item>
+        <a-asset-item id="model" src="./assets/ville3Dbis.glb"></a-asset-item>
       </a-assets>
       <!-- The virtual camera that matches your phone camera -->
       <a-camera position="0 4 10"></a-camera>
@@ -62,7 +65,7 @@
         
 
         
-          <a-entity scale="5.3 5.3 5.3" position="0 0 0" rotation="180 90 90" gltf-model="#model"></a-entity>
+          <a-entity scale="2.15 2.15 2.15" position="0 0 0" rotation="180 90 90" gltf-model="#model"></a-entity>
         
         
         <!-- Floating Text -->
